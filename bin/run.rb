@@ -7,8 +7,8 @@ SQLRunner.new(@db).execute_create_hp_column
 Pokemon.save('Pikachu', 'electric', @db)
 Pokemon.save('Magikarp', 'water', @db)
 
-pikachu = Pokemon.find(1, @db)
+bulbasaur = Pokemon.find(1, @db)
 
-pikachu.alter_hp(59, @db)
+bulbasaur.alter_hp(59, @db)
 
 binding.pry
