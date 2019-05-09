@@ -21,6 +21,7 @@ class Pokemon
     sql = "SELECT * FROM pokemon WHERE id = ?"
     result = db.execute(sql, id)[0]
     self.new(id: result[0], name: result[1], type: result[2], hp: result[3], db: db)
+    binding.pry
   end
   
   def alter_hp(hp, db)
