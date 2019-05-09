@@ -10,4 +10,3 @@ pokemon = @db.execute("SELECT * FROM pokemon")
 
 bulbasaur = Pokemon.find(1, @db)
 
-puts bulbasaur
