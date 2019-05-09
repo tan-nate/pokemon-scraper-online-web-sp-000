@@ -11,6 +11,6 @@ bulbasaur = Pokemon.find(1, @db)
 
 bulbasaur.alter_hp(59, @db)
 
-pokemon = db.execute("SELECT * FROM pokemon")
+pokemon = @db.execute("SELECT * FROM pokemon")
 
 puts pokemon
