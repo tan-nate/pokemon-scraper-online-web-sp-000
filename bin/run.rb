@@ -9,7 +9,6 @@ Pokemon.save('Magikarp', 'water', @db)
 
 pikachu = Pokemon.find(1, @db)
 
-
-all_pokemon = @db.execute("SELECT * FROM pokemon;")
+pikachu.alter_hp(59, @db)
 
 binding.pry
