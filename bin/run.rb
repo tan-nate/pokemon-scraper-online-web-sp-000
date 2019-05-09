@@ -11,4 +11,5 @@ bulbasaur = Pokemon.find(1, @db)
 
 bulbasaur.alter_hp(59, @db)
 
+
 #binding.pry
